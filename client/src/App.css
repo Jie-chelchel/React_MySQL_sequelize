@@ -1,0 +1,53 @@
+.App {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.post {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  margin-top: 50px;
+  border: 1px solid lightblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.post .title {
+  flex: 20%;
+  border-bottom: 1px solid lightblue;
+  display: grid;
+  place-content: center;
+  color: white;
+  background-color: rgb(84, 9, 110);
+}
+
+.post:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+
+.post .body {
+  flex: 60%;
+  display: grid;
+  place-content: center;
+}
+
+.post .footer {
+  flex: 20%;
+  display: flex;
+  place-content: center;
+  border-top: 1px solid lightblue;
+  background-color: rgb(84, 9, 110);
+  padding-left: 15px;
+  color: white;
+}
