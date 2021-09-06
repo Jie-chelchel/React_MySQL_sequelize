@@ -8,6 +8,12 @@ router.get("/", async (req, res) => {
   res.json(allPosts);
 });
 
+router.get("/:id", async (req, res) => {
+  const { id } = req.params;
+  const postById = await Posts.findByPk(id); //with sequelize, find by primary key
+  res.json(postById);
+});
+
 //sequelize you need to make everything async
 router.post("/", async (req, res) => {
   const post = req.body;
