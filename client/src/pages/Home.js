@@ -15,6 +15,7 @@ const Home = () => {
       })
       .catch((err) => {});
   }, []);
+
   return (
     <div>
       {listOfPosts.map((post, index) => {
