@@ -11,6 +11,7 @@ const Home = () => {
     axios
       .get("http://localhost:8888/posts")
       .then((res) => {
+        console.log(res.data);
         setListOfPosts(res.data);
       })
       .catch((err) => {});
